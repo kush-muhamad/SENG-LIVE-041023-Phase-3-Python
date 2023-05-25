@@ -90,4 +90,23 @@ class Pet:
 
 
 
-ipdb.set_trace()
+#ipdb.set_trace()
+
+
+# Instance / Object Properties => Attributes that are controlled by methods
+
+    # Create an Owner class with two instance methods:
+
+        #get_name => Retrieve Owner's name
+
+
+        #set_name => Set Owner's name
+
+            #Ensure that Owner's name is a string
+
+
+            #If not, issue warning of "Name must be a string"
+
+    #Use property() to compile get_name / set_name and invoke them
+
+    #Whenever we access an Owner instance's name
