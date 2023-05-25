@@ -61,7 +61,6 @@ class Pet:
 # baboi = Pet("Baboi", 8, "Chihuahua", "Tranquil") 
 
 
-
 # what is self? 
     # self => instance of Pet class
     # <__main__.Pet object at 0x100e17910>
@@ -89,29 +88,6 @@ class Pet:
         ''')
         pass
 
-
-# Demonstrate instances 
-    # Different Instances are Different Objects
-# Demonstrate __init__
-# Demonstrate instance method
-# Demonstrate the self keyword 
-# Stretch Goals
-# Demonstrate object properties
-
-# Instances 
-
-# Run in ipdb session
-# rose == cookie
-#   False
-
-#Read Attributes 
-# rose.name -> rose
-# rose.age -> 11
-
-#Update
-# rose.age -> 11
-# rose.age = 12
-# rose.age -> 12
 
 
 ipdb.set_trace()
