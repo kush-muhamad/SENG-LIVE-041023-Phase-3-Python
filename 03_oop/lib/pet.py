@@ -93,20 +93,43 @@ class Pet:
 #ipdb.set_trace()
 
 
-# Instance / Object Properties => Attributes that are controlled by methods
+# Object Properties => Attributes that are controlled by methods
+
+# 1. Create an Owner class
+class Owner:
+    def __init__(self, age): #provide parameters
+        self.age = age #set the attributes for the instance
+
 
     # Create an Owner class with two instance methods:
 
-        #get_name => Retrieve Owner's name
+    #2. get_name(instance method#1) => Retrieve Owner's name
+    def get_name(self):
+        print("Retrieving Owner's name...") 
+        
+        return self._name #property not attribute so we are using only '_' one underscore                           
 
 
-        #set_name => Set Owner's name
+    #3. set_name(instance method#2) => Set Owner's name
+    def set_name(self, name):
+        print("Setting Owner's name...")
+ 
+        #Conditional Logic
+        #3-1. Ensure that Owner's name is a string
+        if (isinstance(name, str)):
+            self._name = name #assign incoming "name" as "_name" for Owner instance
 
-            #Ensure that Owner's name is a string
+        #3-2. If not, issue warning of "Name must be a string"
+        else: 
+            print("Name must be a string")
+
+    #4. Use property() to compile get_name / set_name and invoke them whenever we access an Owner instance's name
+    name = property(get_name, set_name)
 
 
-            #If not, issue warning of "Name must be a string"
 
-    #Use property() to compile get_name / set_name and invoke them
 
-    #Whenever we access an Owner instance's name
+eugene = Owner(28)
+eugene.name = "Eugene"
+print(eugene.name)
+eugene.name = 23
