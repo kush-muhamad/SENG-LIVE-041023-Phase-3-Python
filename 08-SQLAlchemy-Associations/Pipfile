@@ -6,11 +6,8 @@ name = "pypi"
 [packages]
 sqlalchemy = "*"
 alembic = "*"
-
-
-[dev-packages]
-pytest = "*"
 ipdb = "*"
+pytest = "*"
 Faker = "*"
 
 [requires]

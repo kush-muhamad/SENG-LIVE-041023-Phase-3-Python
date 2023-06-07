@@ -1,8 +1,9 @@
-"""adding models
+"""add pet / owner tables
 
-Revision ID: 8a7c5591f32c
-Revises: 8b8cc2bdc73a
-Create Date: 2022-11-17 09:42:59.239161
+
+Revision ID: 5fd416efdf0b
+Revises: 
+Create Date: 2023-06-07 09:04:49.165159
 
 """
 from alembic import op
@@ -10,8 +11,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '8a7c5591f32c'
-down_revision = '8b8cc2bdc73a'
+revision = '5fd416efdf0b'
+down_revision = None
 branch_labels = None
 depends_on = None
 
